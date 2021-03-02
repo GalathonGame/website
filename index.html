@@ -1,46 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <title>Galathon</title>
+
+        <link rel="shortcut icon" type="image/png" href="img/haithangdev.png"/>
         
-    <title>Galathon</title>
-
-</head>
-<body>
-    
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         
-        <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">Home</a>
-              <a class="nav-item nav-link" href="#">Features</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
-            </div>
-          </div>
-      </nav>
-    
-      <section class="header">
-        <img src="img/headerImg.jpg" id="header-img">
-      </section>
+    </head>
 
-      <section class="news">
+    <body>
+        <main>
+            <nav class="navbar navbar-light">
+                
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">GALATHON</a>
 
-      </section>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                    <button class="navbar-toggler" data-target="#collapsibleNavId" style="margin-left: auto; margin-right: 20px;">
+                        <span class="navbar-toggler-icon" id="navbar-togglerr"></span>
+                    </button>
+                    <div class="button">
+                        <a href="login.html"><button class="btn">Login</button></a>
+                        <a href="register.html"><button class="btn">Sign up</button></a>
+                    </div>
+                </div>
 
-</body>
+            </nav>
+
+
+            <ul class="navbar-nav ml-auto mt-lg-0" style="font-weight: 300;">
+                <div class="nav-link custom-navlink">
+                    <div class="custom-li-header">
+                        <li class="nav-item active">
+                            <h2 class="nav-link">Menu</h2>
+                        </li>
+                    </div>
+                </div>
+                
+
+                <div class="custom-li">
+                    <a class="nav-link" href="index.html">
+                        <li class="nav-item active">
+                            <h3 class="nav-link">BLOG</h3>
+                        </li>
+                    </a>
+                </div>
+                <div class="custom-li">
+                    <a class="nav-link" href="about.html">
+                        <li class="nav-item active">
+                            <h3 class="nav-link">ABOUT</h3>
+                        </li>
+                    </a>
+                </div>
+                <div class="custom-li">
+                    <a class="nav-link" href="contact.html">
+                        <li class="nav-item active">
+                            <h3 class="nav-link">CONTACT</h3>
+                        </li>
+                    </a>
+                </div>
+                
+            </ul>
+
+            <header>
+                <!--<div class="custom-shape-divider-bottom-1601132121">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>-->
+                <div class="header-content">
+                    <div class="row" style="margin: 0 !important;">
+                        <div class="col-6"  style="padding: 0 !important;">
+                        
+                        </div>
+                            
+                        <div class="col-6" style="padding: 0 !important;">
+                            <div class="header-text">
+                                <h1 class="h1-header">TIPS AND TRICKS <br> HAI THANG DEV BLOG <br> BY WHO AM I AND DANH TAI</h1>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </header>
+
+
+            <section id="blog-post">
+
+                <div class="container">
+                
+                    <div class="post">
+                
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12">
+                                <img class="img-fluid" src="img/article-img-1.jpg">
+                            </div>
+
+                            <div class="col-md-7 col-sm-12">
+                                <p>20.01.2020 | By Who am I</p>
+                                <div class="post-text">
+                                    <h3 class="h3-article">
+                                        Đây là tựa game Flappy Bird huyền thoại khi kết hợp với công nghệ đồ họa RTX, Unreal Engine 4 tiên tiến
+                                    </h3>
+                                    <p class="p-article">
+                                        Flappy Bird is funny haha.
+                                    </p>
+
+                                    
+                                </div>
+                                <a href="post.html" class="link"><button class="form-control readmore-btn">READ MORE</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12">
+                                <img class="img-fluid" src="img/article-img-2.jpg">
+                            </div>
+
+                            <div class="col-md-7 col-sm-12">
+                                <p>20.01.2020 | By Who am I</p>
+
+                                <div class="post-text">
+                                    <h3 class="h3-article">
+                                        Apple is about to open its first floating store that's shaped like a giant sphere — take a look
+                                    </h3>
+                                    <p class="p-article">
+                                        SINGAPORE - JANUARY 29: A floating glass orb, allegedly to be the new Apple flagship store at Marina Bay Sands is seen with the Central Business District in the background on January 29, 2020 in Singapore.
+
+                                    </p>
+                                </div>
+                                
+                                <a href="post.html" class="link"><button class="form-control readmore-btn">READ MORE</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="post">
+                
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12">
+                                <img class="img-fluid" src="img/article-img-3.webp">
+                            </div>
+
+                            <div class="col-md-7 col-sm-12">
+                                <p>20.01.2020 | By Who am I</p>
+
+                                <div class="post-text">
+                                    <h3 class="h3-article">
+                                        AMAZON ANNOUNCES HALO, A FITNESS BAND AND APP THAT SCANS YOUR BODY AND VOICE</h3>
+                                    <p class="p-article">
+                                        It makes a 3D model of your body and tracks the emotional tone in your voice</p>
+                                </div>
+
+                                
+                                <a href="post.html" class="link"><button class="form-control readmore-btn">READ MORE</button></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+            <footer class="end-footer">
+
+
+                <h2 class="h1-footer">Why we do this?</h2>
+
+                <h1 class="main-footer">1 + 1 = 2, HaithangDev = 1</h1>
+
+                <div class="line-text"><span>HAI THANG DEV</span></div>
+
+
+            </footer>
+
+
+        </main>
+
+
+        <script src="js/menu.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+
+
 </html>
