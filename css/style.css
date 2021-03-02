@@ -9,7 +9,27 @@
     font-weight: 100;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif;    
+
+}
+
+.navbar {
+    height: 10%;
+}
+
+.navbar-brand {
+    margin-left: 15%;
+}
+
+.header {
+    background-color: black;
+    display: grid;
+    height: 100%;
+}
+
+#header-img {
+    max-height: 100vh !important;
+    max-width: 100%;
+    margin: auto;
 
 }
