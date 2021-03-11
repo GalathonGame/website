@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('font.css')
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@
 
 }
 
-html, body {height: 100%; }
+html, body {height: 100%; max-width: 100% !important;}
 
 
 ::-webkit-scrollbar {
@@ -25,9 +25,12 @@ html, body {height: 100%; }
 /*********************************************Navbar and Header*************************************************/
 
 header {
-    background-color: black;
-    height: calc(100vh - 74px);
+    background-color: white;
+    /**height: calc(100vh - 74px);**/
+    
+    height: calc(100vh - 0px);
     position: relative;
+    
 }
 
 .custom-shape-divider-bottom-1601132121 {
@@ -51,17 +54,51 @@ header {
 }
 .navbar-brand {
     font-size: 32px !important;
+    margin-left: 8% !important;
 }
 
 .nav-link {
     font-size: 20px !important;
 }
 
+.nav-btn {
+  background: #71A89E;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
 
 .header-img {
-    width: auto;
-    height: 80vh;
+  margin-top: 10%;
+  width: auto;
+  height: 80vh;
 
+}
+.header-btn{
+  margin-left: 15%;
+  background: #71A89E;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 50px;
+  width: 222px;
+  height: 64px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .fixed-top.scrolled {
@@ -70,8 +107,8 @@ header {
 }
 
 
-
-@media only screen and (min-width: 632px) {
+/**header here***/
+/*@media only screen and (min-width: 632px) {
     .header-text {
         position: relative;
         left: -15%;
@@ -105,19 +142,50 @@ header {
     .header-img {
         display: none;
     }
+}*/
+
+
+#header-margin {
+    margin-top: 20%;
 }
 
 .h1-header {
     font-weight: 700;
-    color: #F5F0ED;
+    font-size: 5vw;
+    color: black;
+    margin-left: 15%;
+    font-family: 'SF Pro Display', 'Open Sans', sans-serif;
 }
 
-@media only screen and (max-width: 632px) {
+.p-header {
+    margin-left: 15%;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    letter-spacing: -0.02em;
+
+    color: #22322F;
+}
+
+@media only screen and (max-width: 768px) {
     
     .button {
         display: none;
     }
+    #header-margin {
+        margin-top: 50%;
+    }
+    .h1-header {
+        font-weight: 700;
+        font-size: 11vw;
+        color: black;
 
+        text-align: center;
+    }
 }
 
 .navbar-nav .custom-li {
