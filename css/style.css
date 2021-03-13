@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('font.css')
+@import url('font.css');
 * {
     padding: 0;
     margin: 0;
@@ -54,7 +54,7 @@ header {
 }
 .navbar-brand {
     font-size: 32px !important;
-    margin-left: 8% !important;
+    margin-left: 6.5% !important;
 }
 
 .nav-link {
@@ -65,10 +65,8 @@ header {
   background: #71A89E;
   border: 2px solid #000000;
   box-sizing: border-box;
-  border-radius: 8px;
   width: 150px;
   height: 50px;
-  font-family: SF Pro Display;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -85,15 +83,30 @@ header {
 }
 .header-btn{
   margin-left: 15%;
-  background: #71A89E;
+  background: white;
   border: 2px solid #000000;
   box-sizing: border-box;
-  border-radius: 8px;
   padding: 20px 24px;
   margin-top: 50px;
   width: 222px;
   height: 64px;
-  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.header-btn:hover{
+  transition-duration: 500ms;
+  margin-left: 15%;
+  background: #71A89E;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  margin-top: 50px;
+  width: 222px;
+  height: 64px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -150,11 +163,16 @@ header {
 }
 
 .h1-header {
-    font-weight: 700;
-    font-size: 5vw;
-    color: black;
-    margin-left: 15%;
-    font-family: 'SF Pro Display', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+  color: black;
+  margin-left: 15%;
+  font-family: 'SF Pro Display', 'Open Sans', sans-serif;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 72px;
+/* identical to box height, or 150% */
 }
 
 .p-header {
@@ -164,6 +182,7 @@ header {
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
+    margin-top: 50px;
     /* or 133% */
 
     letter-spacing: -0.02em;
@@ -180,7 +199,6 @@ header {
         margin-top: 50%;
     }
     .h1-header {
-        font-weight: 700;
         font-size: 11vw;
         color: black;
 
@@ -314,24 +332,40 @@ header {
 
 /***********************************BLOG POST******************************/
 
+.blog-post-h1 {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 110.5%;
+  /* or 53px */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.img-fluid {
+    border-radius: 6px;
+}
+
 #blog-post {
     margin-top: 100px;
 }
 
 .post {
     display: block;
-    margin: 50px auto;
+    margin: 50px 10%;
 
 }
 
 .h3-article {
     font-weight: 600;
     font-size: 30px;
-    text-transform: uppercase;
+    font-family: SF Pro Display;
 }
-.p-article {
-    font-weight: 400;
-    font-size: 17px;
+
+.time-post {
+    margin-top: 15px;
 }
 
 .post-text {
@@ -354,6 +388,7 @@ header {
     height: 40px !important;
     background: transparent !important;
     border-radius: 0% !important;
+    margin-top: 10px;
     
 }
 
@@ -361,7 +396,7 @@ header {
 .readmore-btn:hover {
     
 
-    background-color: grey !important;
+    background-color: #71A89E !important;
     color: white !important;
     border: 1px grey solid !important;
     transition: 0.5s !important;
@@ -378,7 +413,7 @@ header {
 .end-footer {
 
     margin-top: 100px;
-    background-color: black;
+    background-color: #333333;
     height: auto;
     margin-bottom: 0;
 
@@ -420,7 +455,7 @@ header {
  
  .line-text span {
     display: inline-block;
-    background-color: black;
+    background-color: #323438;
     color: white;
     position: relative;
     z-index: 2;

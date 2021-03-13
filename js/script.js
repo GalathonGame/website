@@ -22,8 +22,6 @@ iconclick.addEventListener('click', function() {
 
     }
     
-    
-    
 }, false);
 
 menu.addEventListener('mouseleave', function() {
