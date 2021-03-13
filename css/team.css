@@ -1,0 +1,35 @@
+.team-header {
+    margin-top: 360px;
+    height: calc(100vh - 300px);
+}
+
+.team-h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 97.2%;
+    /* or 58px */
+
+    letter-spacing: -0.03em;
+
+    /* Main Black */
+
+    color: #181717;
+}
+
+.team-p {
+    /* Heading-2 */
+    margin-top: 50px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 117%;
+    /* or 37px */
+
+    letter-spacing: -0.03em;
+
+    color: #606060;
+
+}

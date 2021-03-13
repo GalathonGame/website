@@ -33,6 +33,10 @@ header {
     
 }
 
+.navbar {
+    background-color: white !important;
+}
+
 .custom-shape-divider-bottom-1601132121 {
     position: absolute;
     bottom: 0;
@@ -62,17 +66,32 @@ header {
 }
 
 .nav-btn {
-  background: #71A89E;
-  border: 2px solid #000000;
+  background: white;
   box-sizing: border-box;
+  
+  border: 2px solid #000000;
   width: 150px;
   height: 50px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: black;
 }
+.nav-btn:hover {
+    transition-duration: 500ms;
+    background: #71A89E;
+    box-sizing: border-box;
+    
+    border: 2px solid #000000;
+    width: 150px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+  }
 
 
 .header-img {
@@ -205,6 +224,7 @@ header {
         text-align: center;
     }
 }
+
 
 .navbar-nav .custom-li {
     border-bottom: 2px solid black;
@@ -360,8 +380,11 @@ header {
 
 .h3-article {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     font-family: SF Pro Display;
+}
+.team {
+    margin-top: 20px;
 }
 
 .time-post {
@@ -413,7 +436,7 @@ header {
 .end-footer {
 
     margin-top: 100px;
-    background-color: #333333;
+    background-color: #23272b;
     height: auto;
     margin-bottom: 0;
 
@@ -455,7 +478,7 @@ header {
  
  .line-text span {
     display: inline-block;
-    background-color: #323438;
+    background-color: #23272b;
     color: white;
     position: relative;
     z-index: 2;
