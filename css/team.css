@@ -61,7 +61,6 @@
 
 .member-p{
     margin-top: 20px;
-    white-space: pre;
 }
 
 .fab {
@@ -105,4 +104,7 @@
     align-self: end;
     justify-content: space-around;
     margin-bottom: 50px;
+}
+li{
+    list-style-type: disc;
 }
