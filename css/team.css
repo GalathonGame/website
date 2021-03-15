@@ -52,6 +52,7 @@
 
 .team-img {
     margin-bottom: 50px;
+    float: right;
 }
 
 .member-h5 {
@@ -101,6 +102,6 @@
 .social-media {
     display: flex;
     align-self: end;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 50px;
 }
