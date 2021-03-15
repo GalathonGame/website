@@ -9,7 +9,7 @@
 
 .team-h1 {
     font-family: DM Sans;
-    font-style: normal;
+    font-style: bold;
     font-weight: 500;
     font-size: 60px;
     line-height: 97.2%;
@@ -19,7 +19,7 @@
 
     /* Main Black */
 
-    color: #181717;
+    color: #fdd701;
 }
 
 .team-p {
@@ -34,7 +34,7 @@
 
     letter-spacing: -0.03em;
 
-    color: #606060;
+    color: #272626;
 }
 
 
