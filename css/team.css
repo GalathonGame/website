@@ -4,14 +4,15 @@
 
 .team-header {
     margin-top: 360px;
-    height: calc(100vh - 300px);
+    height: auto;
 }
+
 
 .team-h1 {
     font-family: DM Sans;
     font-style: bold;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 55px;
     line-height: 97.2%;
     /* or 58px */
 
@@ -19,11 +20,7 @@
 
     /* Main Black */
 
-<<<<<<< HEAD
-    color: #272626;
-=======
     color: #363333;
->>>>>>> e2be3fb3e713bb0cf0a76934df9ed90230c3db46
 }
 
 .team-p {
@@ -56,7 +53,9 @@
 
 .team-img {
     margin-bottom: 50px;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .member-h5 {
@@ -106,10 +105,21 @@
 .social-media {
     display: flex;
     align-self: end;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 50px;
+    margin-top: 35px;
 }
 
 li{
     list-style-type: disc;
+    list-style-position: inside;
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .team-header {
+        margin-top: 200px;
+        height: auto;
+    }
 }
