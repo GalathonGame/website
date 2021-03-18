@@ -1,1 +1,1 @@
-# website
+# website for Galathon Studio
