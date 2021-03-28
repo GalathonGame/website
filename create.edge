@@ -1,0 +1,29 @@
+@layout('layouts.app')
+
+@section('content')
+
+    <section id="blog-post">
+        <div class="container">
+            <h2 style="font-weight: 100; text-align: center;">CREATE A POST</h2>
+            <p style="font-weight: 100; text-align: center;">Putting your new idea and passion into this post</p>
+
+
+            <form action="/posts/store" method="POST" enctype="multipart/form-data" class="form-group">
+                <div class="form-inline">
+                    
+                    <input type="file" name="image" id="file" class="form-control" accept="image/*" hidden>
+                    <label for="file" class="form-control file-upload" id="selector"><span>UPLOAD IMAGE</span>
+                    </label>
+                </div>
+
+                <input type="text" class="form-control custom-form" name="username" id="" aria-describedby="emailHelpId" placeholder="AUTHOR NAME">
+                <input type="text" class="form-control custom-form" name="title" id="" aria-describedby="emailHelpId" placeholder="TITLE">
+                <textarea name="description" id="" cols="30" rows="5" class="form-control custom-form" placeholder="POST DESCRIPTION"></textarea>
+                <textarea name="content" id="" cols="30" rows="5" class="form-control custom-form" placeholder="POST CONTENT"></textarea>
+                <input type="password" class="form-control custom-form" name="key" id="" aria-describedby="emailHelpId" placeholder="KEY">
+                <input type="submit" value="UPLOAD" class="form-control submit-button">
+            </form>
+        </div>
+    </section>
+
+@endsection

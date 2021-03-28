@@ -1,0 +1,36 @@
+{
+  "name": "haithangdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trannguyensinh/haithangdev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trannguyensinh/haithangdev/issues"
+  },
+  "homepage": "https://github.com/trannguyensinh/haithangdev#readme",
+  "dependencies": {
+    "alert": "^5.0.5",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "edge.js": "^1.1.4",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.2",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "md5": "^2.3.0",
+    "mongoose": "^5.10.1",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.6",
+    "startbootstrap-clean-blog": "^5.0.9"
+  }
+}
