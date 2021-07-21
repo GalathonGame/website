@@ -6,15 +6,23 @@ const middleware = require('../utils/indexMiddleware');
 module.exports = function (app) {
     router.get('/', indexController.home);
 
-    router.get('/posts/new', indexController.createNewPost);
-    router.post('/posts/store', middleware.canPost, middleware.isFormFilled, indexController.createNewPost);
+    router.get('/posts/new', middleware.canCreatePost, indexController.createNewPost);
+    router.post('/posts/store', middleware.canCreatePost, middleware.isFormFilled, indexController.createNewPost);
     router.get('/posts/:id', indexController.post);
     
-    router.get('/posts/edit/:id', indexController.editPost);
-    router.post('/posts/edit/:id', middleware.canPost, middleware.isFormFilled, indexController.editPost);
-    router.get('/posts/delete/:id', indexController.deletePost);
+    router.get('/posts/edit/:id', middleware.canCreatePost, indexController.editPost);
+    router.post('/posts/edit/:id', middleware.canCreatePost, middleware.isFormFilled, indexController.editPost);
+    router.get('/posts/delete/:id', middleware.canCreatePost, indexController.deletePost);
 
-    router.get('/admin', indexController.admin);
+    router.get('/register', indexController.register);
+    router.post('/register', middleware.canRegister, indexController.register);
+
+    router.get('/login', indexController.login);
+    router.post('/login', indexController.login);
+
+    router.get('/logout', indexController.logout);
+
+    router.get('/admin', middleware.isLogin, indexController.admin);
     router.get('/team', indexController.team);
 
     return app.use('/', router);

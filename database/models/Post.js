@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { collection } = require('./Auth');
 
 const PostSchema = new mongoose.Schema({
     title: String,

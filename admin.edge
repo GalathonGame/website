@@ -1,0 +1,51 @@
+@layout('layouts.app')
+
+@section('css')
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {{--  <link rel="stylesheet" type="text/css" href="css/styleadmin.css">  --}}
+    <style>
+        body {
+            min-height: 100vh
+        }
+    </style>
+@endsection
+
+@section('content')
+
+    <section id="blog-post">
+        <div class="container">
+            @each(post in posts)
+                <div class="post">
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12">
+                            <img class="img-fluid" src={{post.image}}>
+                        </div>
+
+                        <div class="col-md-7 col-sm-12">
+
+                            <div class="edit-icon">
+                                <a href="/posts/delete/{{ post._id }}"><span class="material-icons">delete_sweep</span></a>
+                                <a href="/posts/edit/{{ post._id }}"><span class="material-icons">create</span></a>
+                            </div>
+
+                            <p>{{ post.createdAt.toDateString() }} | By {{ post.username }}</p>
+                                <div class="post-text">
+                                    <h3 class="h3-article">
+                                        {{ post.title }}
+                                    </h3>
+                                    <p class="p-article">
+                                        {{ post.description }}
+                                    </p>
+                                </div>
+                            <a href="/posts/{{post._id}}" class="link"><button class="form-control readmore-btn">READ MORE</button></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            @endeach
+        </div>
+    </section>
+
+@endsection

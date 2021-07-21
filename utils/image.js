@@ -1,17 +1,17 @@
-const fs = require('fs');
-const path = require('path');
-
 module.exports = {
-    deleteImg: async (image) => {
-        fs.unlinkSync(path.join(`${__dirname}/..`, image)); //delete image before updating it
-    },
-    prepareObj: async (body, image) => {
+    prepareObj: async (body) => {
+        //Getting the link of the first image also the thumbnail
+        // var firstImg = await body.content.indexOf('<img');
+        // var start = await body.content.indexOf('"', firstImg)+1;
+        // var end = await body.content.indexOf('>', start+5)-1;
+        // var link = await body.content.substring(start, end); //don't get character = &quot; = "
+
+        //Erasing the thumbnail from content
+        // body.content.replace(body.content.substring(firstImg, end+2), '');
+
         let obj = {
             ...body,
-            image: `img/${image.name}`
         }
-
-        await image.mv(path.join(`${__dirname}/../img`,image.name)); //move uploaded image to ../img/
         return await (obj);
     }
 }

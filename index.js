@@ -55,6 +55,8 @@ app.set('views', __dirname);
 const Route = require('./routes/route');
 Route(app);
 
-app.listen(8080, () => {
-    console.log('App listening on port 8080');
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log('App listening on port', PORT);
 });

@@ -1,0 +1,33 @@
+@layout('layouts.app')
+
+@section('css')
+
+    {{--  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mix.css">  --}}
+    
+@endsection
+
+@section('content')
+
+    <section id="blog-post">
+        <div class="container">
+            <h2 style="font-weight: 100; text-align: center;">REGISTER</h2>
+            @if(errors.length > 0)
+                <ul class="list-group">
+                    @each(error in errors)
+                        <li class="list-group-item text-danger">{{ error }}</li>
+                    @endeach
+                </ul>
+            @endif
+            <form method="POST" class="form-group">
+                <input type="email" class="form-control custom-form" name="email" id="" aria-describedby="emailHelpId" placeholder="EMAIL" required> 
+                <input type="text" class="form-control custom-form" name="username" id="" aria-describedby="emailHelpId" placeholder="USERNAME" required>
+                <input type="text" class="form-control custom-form" name="regId" id="" aria-describedby="emailHelpId" placeholder="REG ID" required>
+                <input type="password" class="form-control custom-form" name="password" id="" aria-describedby="usernamHelpId" placeholder="PASSWORD" required>
+
+                <input type="submit" value="SEND" class="form-control submit-button">
+            </form>
+        </div>
+    </section>
+
+@endsection
