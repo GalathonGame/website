@@ -149,33 +149,18 @@ li {
 }
 
 .span-h3-post {
-    color: black;
+    color: rgb(61, 61, 61);
     padding-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 
-.post {
-    display: block;
-    margin: 50px 10%;
 
-}
-
-.h3-article {
-    font-weight: 600;
-    font-size: 25px;
-    font-family: 'Roboto';
-}
 .team {
     margin-top: 20px;
 }
 
-.time-post {
-    margin-top: 15px;
-}
-
-.post-text {
-    margin: auto 0;
-}
 
 
 .link {
