@@ -9,10 +9,9 @@
     <title>Galathon</title>
 
     <link rel="shortcut icon" type="image/png" href="img/haithangdev.png" />
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
 
     @!section('css')
 
@@ -28,38 +27,39 @@
 
 <body>
     <main>
-        <nav class="navbar navbar-light fixed-top">
-
-            <div class="container-fluid">
-                <a class="navbar-brand" style="margin-left: 0 !important;" href="/">GALATHON</a>
-
-                <!--<button class="navbar-toggler" data-target="#collapsibleNavId" style="margin-left: auto; margin-right: 20px;">
-                    
-                        <span class="navbar-toggler-icon" id="navbar-togglerr"></span>
-                    </button>-->
-                    
-                <div class="button">
-                    <a href="/team"><button class="btn">Meet the team</button></a>
-                    <a href="#"><button class="nav-btn">Get demo</button></a>
+        <nav class="navbar navbar-expand-xl navbar-light" style="padding: 0 !important">
+            <a class="navbar-brand" href="/">GALATHON</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/team">Meet our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Coming soon</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="nav-icon">
+                <a href="/login"><i class="far fa-sign-in"></i></a>
+                <div id="menuToggle">
+                    <input type="checkbox" id="menu-inp" />
+                    <span style="margin-top: 4px !important;"></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="yobro hidden" id="mobile-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Meet our team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coming soon</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </nav>
 
         @!section('content')
-        
-        <footer class="end-footer">
-
-
-            <h2 class="h1-footer">GALATHON STUDIO</h2>
-
-            <h1 class="main-footer">Turn your team on to productivity with Gravity the time tracker.</h1>
-
-            <div class="line-text"><span>GALATHON 2021</span></div>
-
-
-        </footer>
-
 
     </main>
 

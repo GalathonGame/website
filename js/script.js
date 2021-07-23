@@ -1,31 +1,51 @@
-const iconclick = document.querySelector('.navbar-toggler');
-const menu = document.querySelector('.navbar-nav');
-const body = document.querySelector('heheboi');
+const checked = document.getElementById('menu-inp')
+const menu= document.getElementById("menuToggle")
+const yo = document.querySelector('.yobro')
 
 
-menu.classList.toggle('hidden');
-
-iconclick.addEventListener('click', function() {
-
-    if (menu.classList.contains('hidden'))
-    {
-        menu.classList.remove('hidden');
-        setTimeout(function() {menu.classList.toggle('active')}, 20);
-
+menu.addEventListener("click", async() => {
     
-    } 
-    else 
+    if (checked.checked === true)
     {
-        menu.classList.remove('active');
+        document.body.scroll ='disable'
+        if (yo.classList.contains("hidden")&&yo.classList.contains("navactive"))
+        {
+            yo.classList.remove("hidden")
+        }
 
-        menu.addEventListener('transitionend', function(e) {menu.classList.add('hidden');}, {capture:false, once: true, passive: false});
+        yo.classList.remove('hidden')
+        
+        
+        setTimeout(function() {yo.classList.add('navactive')},5)
+        if (yo.classList.contains("hidden")&&yo.classList.contains("navactive"))
+        {
+            yo.classList.remove("hidden")
+        }
+        console.log(checked.checked)
 
+        document.body.style.overflowY = 'hidden'
     }
-    
-}, false);
+    else if (checked.checked===false)
+    {
+        
+        document.body.style.overflowY = ''
+        if (yo.classList.contains("hidden")&&yo.classList.contains("navactive"))
+        {
+            yo.classList.remove("navactive")
+        }
+        yo.classList.remove('navactive');
 
-menu.addEventListener('mouseleave', function() {
-    menu.classList.remove('active');
+        yo.addEventListener('transitionend', function(e) {setTimeout(function(){yo.classList.add('hidden');}),50}, {capture:false, once: true, passive: false});
+        console.log(checked.checked)
+    }
+})
 
-    menu.addEventListener('transitionend', function(e) {menu.classList.add('hidden');}, {capture:false, once: true, passive: false});
-}, false);
+
+function noscroll() {
+    document.body.style.overflowY = 'hidden'
+}
+
+
+function scroll() {
+    document.body.style.overflowY = ''
+}

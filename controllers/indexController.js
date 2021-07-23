@@ -3,10 +3,13 @@ const Auth = require('../database/models/Auth');
 const md5 = require('md5');
 const image = require('../utils/image');
 const text = require('../utils/text');
+const mailer = require('../utils/mailer');
 
 var self = module.exports = {
     home: async (req, res) => {
-        res.render('index');
+        let posts = await Post.find({}); //all the posts in database
+        posts.reverse();
+        res.render('index', {posts});
     },
     createNewPost: async (req, res) => {
         if (req.method === 'GET') return res.render('create');
@@ -78,8 +81,20 @@ var self = module.exports = {
         res.render('admin', {posts});
     },
     team: async (req, res) => {
-        let posts = await Post.find({}); //all the posts in database
-        posts.reverse();
-        res.render('team', {posts});
+        res.render('team');
+    },
+    notify: async (req, res) => {
+        const email = req.body.email;
+
+        //Do some stuff with this email (save to Excel file or database...)
+        // 
+
+        //Send a message after registering successfully
+        try {
+            await mailer.sendMail(email);
+            res.redirect('/')
+        } catch (error) {
+            res.send(error);
+        }
     }
 }

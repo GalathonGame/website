@@ -24,6 +24,7 @@ module.exports = function (app) {
 
     router.get('/admin', middleware.isLogin, indexController.admin);
     router.get('/team', indexController.team);
+    router.post('/notify', indexController.notify);
 
     return app.use('/', router);
 }
